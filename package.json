@@ -1,0 +1,31 @@
+{
+  "name": "fourbar",
+  "version": "0.0.1",
+  "description": "FourBar linkage vector analysis by vector method",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaybeRex/FourBar.git"
+  },
+  "keywords": [
+    "fourbar",
+    "nodejs",
+    "node",
+    "linkage",
+    "vector",
+    "method",
+    "kinematics"
+  ],
+  "author": "Mario Solorzano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaybeRex/FourBar/issues"
+  },
+  "homepage": "https://github.com/MaybeRex/FourBar#readme",
+  "dependencies": {
+    "mathjs": "^2.4.0"
+  }
+}
