@@ -1,4 +1,4 @@
 var FourBar = require('../lib/vectorFourBar.js');
 var four = new FourBar;
 
-four.couplerAngle(1,2,3,4,5);
+console.log(four.outputAngle(  1.5  ,  4  ,  4.5  ,  5  ,  0.2  ));
