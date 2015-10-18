@@ -5,6 +5,10 @@ A node.js program for a fourbar position analysis using the vector method. This 
 Eventually I will probably add a fivebar and a sixbar but for now only four. If you feel this is useful to you or someone you know, by all means share it or contribute!   
 
 
+##Documentation
+
+* [FourBar Vector Method]()
+
 
 ##ToDo
 
