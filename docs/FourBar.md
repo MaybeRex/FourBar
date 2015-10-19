@@ -19,5 +19,5 @@ This library makes for quick and easy position analysis of a simple four bar lin
 
 
 In the image below, input is represented by _s_, the coupler is _p_ and the output is _u_. Driving angle is _Theta 2_ and the _deltas_ are for creating ternery links.
- 
-![image](http://i.imgur.com/tF8eoCr.png))
+
+![image](http://i.imgur.com/tF8eoCr.png)
