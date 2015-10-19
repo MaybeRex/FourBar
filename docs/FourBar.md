@@ -18,6 +18,20 @@ This library makes for quick and easy position analysis of a simple four bar lin
 ##Parameters
 
 
-In the image below, _input_ is represented by _s_, the _coupler_ is _p_ and the _output_ is _u_. Driving angle is _Theta 2_ and the _deltas_ are for creating ternary links. 
+In the image below, _input_ is represented by _s_, the _coupler_ is _p_ and the _output_ is _u_. Driving angle is _Theta 2_ and the _deltas_ are for creating ternary links.
 
 ![image](http://i.imgur.com/tF8eoCr.png)
+
+
+##Example
+
+Below is a vary basic example to show how fast calculations can be made
+
+        var FourBar = require('../lib/vectorFourBar.js');
+        var four = new FourBar;
+
+        //This example quickly logs information about a fourbar at angle 0.2 radians
+
+        console.log('output angle' ,four.outputAngle(1.5, 4, 4.5, 5, 0.2));
+        console.log('coupler angles' ,four.outputAngle(1,1.5,1,1.5,0.5));
+        console.log('outputVector', four.outputVector(1,1.5,1,1.5,0.5));
