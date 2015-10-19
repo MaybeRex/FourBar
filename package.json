@@ -26,6 +26,5 @@
   },
   "homepage": "https://github.com/MaybeRex/FourBar#readme",
   "dependencies": {
-    "mathjs": "*"
   }
 }
