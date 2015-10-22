@@ -1,3 +1,7 @@
+//This example makes quick work out of a fourbar position homework
+//Simply diaplays one scenario of a linkage at an angle of 75 degrees
+//All input angles must be provided in radians
+
 var FourBar = require('../lib/vectorFourBar.js');
 var four = new FourBar;
 
@@ -28,7 +32,7 @@ console.log('open coupler angle', (coupler.open * (180/Math.PI)));
 console.log('');
 console.log('TYPE: ', four.linkageType(link2, link3, link4, link1, angle));
 console.log('');
-console.log('');
 console.log('crossed transmission angle', (transmission.crossed * (180/Math.PI)));
 console.log('');
 console.log('open transmission angle', (transmission.open * (180/Math.PI)));
+console.log('');
