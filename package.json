@@ -1,6 +1,6 @@
 {
   "name": "fourbar",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "FourBar linkage vector analysis by vector method",
   "main": "vectorFourBar.js",
   "scripts": {
