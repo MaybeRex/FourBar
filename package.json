@@ -1,8 +1,8 @@
 {
   "name": "fourbar",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "FourBar linkage vector analysis by vector method",
-  "main": "vectorFourBar.js",
+  "main": "./lib/vectorFourBar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
