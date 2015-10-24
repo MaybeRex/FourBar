@@ -2,7 +2,7 @@
 //Simply diaplays one scenario of a linkage at an angle of 75 degrees
 //All input angles must be provided in radians
 
-var FourBar = require('../lib/vectorFourBar.js');
+var FourBar = require('../vectorFourBar.js');
 var four = new FourBar;
 
 
