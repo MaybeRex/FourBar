@@ -30,25 +30,33 @@ In the image below, _input_ is represented by _s_, the _coupler_ is _p_ and the 
 
 Below is a vary basic example to show how fast calculations can be made
 
-        var FourBar = require('../lib/vectorFourBar.js');
-        var four = new FourBar;
+``` javascript
+
+const FourBar = require('fourbar');
+const four = new FourBar;
 
 
-        var output;
-        var coupler;
+let output;
+let coupler;
+let transmission;
+
+const link1 = 20;
+const link2 = 10;
+const link3 = 10;
+const link4 = 10;
+angle = (75 * (Math.PI/180));
 
 
-        output = four.outputAngle(2, 7, 9, 6, 0.523599);
-        coupler = four.couplerAngle(2, 7, 9, 6, 0.523599);
+output = four.outputAngle(link2, link3, link4, link1, angle);
+coupler = four.couplerAngle(link2, link3, link4, link1, angle);
+transmission = four.transmissionAngle(link2, link3, link4, link1, angle);
 
-        console.log('');
-        console.log('crossed output angle', (output.crossed * (180/Math.PI)));
-        console.log('');
-        console.log('open output angle', (output.open * (180/Math.PI)));
-        console.log('');
+console.log(`Crossed output angle ${(output.crossed * (180/Math.PI))} \n`);
+console.log(`Open output angle ${(output.open * (180/Math.PI))} \n`);
+console.log(`Crossed coupler angle ${(coupler.crossed * (180/Math.PI))} \n`);
+console.log(`Open coupler angle, ${(coupler.open * (180/Math.PI))} \n`);
+console.log(`TYPE: ${four.linkageType(link2, link3, link4, link1, angle)} \n`);
+console.log(`Crossed transmission angle ${(transmission.crossed * (180/Math.PI))} \n`);
+console.log(`Open transmission angle ${(transmission.open * (180/Math.PI))} \n`);
 
-        console.log('crossed coupler angle', (coupler.crossed * (180/Math.PI)));
-        console.log('');
-        console.log('open coupler angle', (coupler.open * (180/Math.PI)));
-        console.log('');
-        console.log('TYPE: ', four.linkageType(2, 7, 9, 6, 0.523599));
+```
